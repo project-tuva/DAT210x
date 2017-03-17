@@ -1,0 +1,59 @@
+1. Create pd DateTime object
+	datetime= pd.date_range(start='1/1/2000', end='...', freq='solo lun, mart... ogni quante set...')
+
+2. extend list by appending elements from the iterable
+	lista = []
+	a = rng(0,11)
+	b = rng(10,100, 10)
+	lista.extend(zip(a,b))
+	
+3. Read data from csv file, having sep=' ' and fixing an index column
+	df_dateRead = pd.read_csv('date.csv', sep= ' ', index_col=4)
+
+4. Apply a function on all data in a column (DataFrame method apply)
+	df['ColX'] = df.ColX.apply(lambda x: x.upper())
+
+5. grab items with a particular value in a column
+	mask = df['ColX'] == n
+	filtered_df = df[mask]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+	
+	
+	
+	

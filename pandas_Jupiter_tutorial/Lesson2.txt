@@ -1,0 +1,9 @@
+1. create a random M-list of names from a list of N<M names
+	np.random.seed(X) --> fix seed
+	np.random.randint(low=Lnum, high=Hnum) --> generate int rnd number
+2. Group data in a  dataset according to the items in a column
+	group = df.groupby('ColX')
+	df_grouped = group.sum()
+	
+3. Plot bar histogram from database data
+	df_sorted['ColX'].plot.bar()

@@ -1,0 +1,81 @@
+1. Define two lists
+2. Create a database from these lists (pd.DataFrame(data = list of tuples, columns=['1', '2']))
+	Look at the first / last N entries: df.head(N) // df.tail(N)
+	Database statistics: 
+						df.info()
+						df.index
+						df.set_index('ColName')-> cambio indici righe
+						df.reset_index() --> resetta index e usa lista range(shape[0])
+						df.columns
+						df.dtypes						
+						df['ColX'].unique()
+						df.describe()
+						df['ColX'].describe
+						
+3. Export the database into a .csv file (to_csv())
+4. Create a database by reading a .csv file (read_csv('path'))
+	Rename the columns in the database (read_csv('path', names = ['Col1','Col2',...]))
+5. Check the data types of the data in the columns (df.dtypes // df['columnX'].dtype)
+6. Sort database entries according to the relational order of a column's elements df.sort_values(['nameColumn'], ascending=False/True)
+7. Look for the max/min element in a column df['ColName'].max()
+	Select specific elements in the database
+	[df['Births'] == df['Births'].max()] IS EQUAL TO [Find all of the records in the Births column where it is equal to 973]
+	df['Names'][df['Births'] == df['Births'].max()] IS EQUAL TO Select all of the records in the Names column WHERE [The Births column is equal to 973]
+8. Output a column's content as a data frame
+	df[['ColX']]
+   Output a column's content as a pd series
+	df['ColX']
+	Output a column's content as a np array
+	df.['Col'].values
+	
+	Output a row content as a data frame
+	df.loc[['RowX']]
+	Output a row content as a series
+	df.loc['RowX']
+	Output a row's content as a np array
+	df.loc[RowID].values
+
+9. Plot a column's data df['ColX'].plot()
+	plt.xticks(list(range(df.shape[0])), df['ColX'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

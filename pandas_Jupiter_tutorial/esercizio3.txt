@@ -1,0 +1,43 @@
+GROUPBY
+http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/04%20-%20Lesson.ipynb
+
+1. Costruire dataframe df 4x3 mediante dizionario. Prima colonna ('one'): tutti 1;
+												seconda ('two'): tutti 2
+												terza ('letter'): a,a,b,b,c
+
+2. Raggruppare righe di df in base alla terza colonna (letter)
+	e sommare contenui delle righe nelle colonne one e two
+
+3. Raggruppare righe di df in base alle colonne 'letter' e 'one'
+	e sommare i dati in 'two'
+	
+4. Analizzare multiindex del dataframe ottenuto
+	Selezionare il primo elemento della colonna two: df_doubleGroupby(('a',1), 'two')
+													oppure: df_doubleGopuby(df_doubleGroupby.index)	
+
+
+5. Ripetere l'operazione di raggruppamento al punto 3, evitando che i dati nelle colonne raggruppate diventino multiindici
+gropuby(['...', '...'], as_index=False)
+
+
+
+6. 	Costruire funzione tabellina, che dato un numero i restituisce l'i-esima riga della tavola pitagorica
+	Costruire np.array i cui elementi sono le prime 10 righe della tavola pitagorica 
+	Costruire lista dei primi 10 numeri interi in formato stringa
+
+	Costuire dizionario ordinato(!) le cui chiavi sono gli interi stringa e i valori gli array numpy
+		from collections import OrderedDictionary
+	Costruire DataFrame a partire dal dizionario ordinato
+	
+	eliminare la prima riga: df.drop(df.index([0], inplace=True)
+
+
+
+
+
+
+
+
+
+
+

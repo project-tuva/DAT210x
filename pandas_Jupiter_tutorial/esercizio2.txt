@@ -1,0 +1,8 @@
+1. Creare dataFrame da un dizionario. Nomi colonne: one, two
+									  Nomi righe(indici): a piacere
+									  Dati: x(:,1)=1 and x(:,2)=2
+
+2. Cambiare la shape del dataframe facendo uno stack(indice principale=righe) / unstack(indice principale: colonne): ovvero avere una sola colonna e multi-indici
+
+3. Del database di partenza, trasporre righe (indici) e colonne 
+	

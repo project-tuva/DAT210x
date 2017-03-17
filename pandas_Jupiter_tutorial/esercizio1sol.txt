@@ -1,0 +1,28 @@
+%reset [-f]
+1. a= list(range(10));
+df=pd.DataFrame(data=a, columns=['Provisional'])
+
+2. df.columns = ['Rev']
+oppure
+df.columns[df.columns.name][0][2]='col' (cambio il nome della terza colonna in 'col')
+oppure
+df.rename(columns={'Provisional':'Rev'}, inplace=True)
+oppure
+df.rename(columns = lambda x: x.capitalize(), inplace=True)
+
+3. df['new']=5
+
+4.	df['new'] = df['new'] +1
+
+5. del df['new']
+
+6. df['col'] = df['Ref']
+
+8. import string as str
+	letters = str.ascii_lowercase
+   df.index = letters[:df.index]
+
+9. df.loc[df.index[:3], df.columns[:1]] (varianti sul tema)
+
+10. df.head()
+	df.tail()
